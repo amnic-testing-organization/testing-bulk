@@ -8,7 +8,7 @@ import platform
 django_version= django.get_version()
 runtime_version = platform.python_version()
 
-config_key = "TEST_INT_VALUE"
+config_key = ["TEST_INT_VALUE","TEST_VALUE_1"]
 secret_key = "SAMPLE_SECRET"
 
 if secret_key in os.environ:
