@@ -18,7 +18,7 @@ else:
     
 for i in config_key:
     if config_key in os.environ:
-        configs = os.environ[i]
+        configs = i
 else:
     configs= "No secrets were found"
 
