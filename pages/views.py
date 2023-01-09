@@ -18,9 +18,9 @@ else:
     
 for i in config_key:
     if config_key in os.environ:
-        configs = i
-else:
-    configs= "No secrets were found"
+        configs = os.environ[i]
+    else:
+        configs= "No secrets were found"
 
 
 def homePageView(request):
