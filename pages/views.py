@@ -15,9 +15,10 @@ if secret_key in os.environ:
     secrets = os.environ['SAMPLE_SECRET']
 else:
     secrets= "No secrets were found"
-
-if config_key in os.environ:
-    configs = os.environ['TEST_INT_VALUE']
+    
+for i in config_key:
+    if config_key in os.environ:
+        configs = os.environ[i]
 else:
     configs= "No secrets were found"
 
