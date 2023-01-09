@@ -16,9 +16,11 @@ if secret_key in os.environ:
 else:
     secrets= "No secrets were found"
     
+configs=''   
 for i in config_key:
-    if config_key in os.environ:
-        configs = os.environ[i]
+    if i in os.environ:
+        configs += os.environ[i]
+        configs+='\n'
     else:
         configs= "No secrets were found"
 
